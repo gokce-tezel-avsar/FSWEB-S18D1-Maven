@@ -93,6 +93,6 @@ class SqlDmlJoinsApplicationTests {
 	@DisplayName("Tüm kitapların ortalama puanını bulunuz.")
 	@Test
 	void findAvgPointOfBooksTest(){
-		assertEquals(String.format("%.2f", kitapRepository.findAvgPointOfBooks()), "19.42");
+		assertEquals(String.format("%.2f", kitapRepository.findAvgPointOfBooks()), "19,42");
 	}
 }
